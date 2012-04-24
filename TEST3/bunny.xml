@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--  Bunny-mesh (500 polygons)
+ -->
+<scene>
+  <camera>
+    <viewPoint>4 6 8</viewPoint>
+    <viewDir>-4.4 -6 -8</viewDir>
+    <projNormal>4.4 6 8</projNormal>
+    <viewUp>0 1 0</viewUp>
+    <projDistance>2</projDistance>
+    <viewWidth>0.5</viewWidth>
+    <viewHeight>0.5</viewHeight>
+  </camera>
+  <image>
+    450 450
+  </image>
+  <shader name="blue" type="Lambertian">
+    <diffuseColor>.05 .2 1</diffuseColor>
+  </shader>
+  <shader name="gray" type="Lambertian">
+    <diffuseColor>0.6 0.6 0.6</diffuseColor>
+  </shader>
+
+  <surface type="Mesh">
+    <shader ref="gray" />
+    <data>bunny500.msh</data>
+  </surface>
+  <surface type="Box">
+  	<minpt>-3 -2 -3</minpt>
+  	<maxpt>3 -0.7 3</maxpt>
+  	<shader ref="blue" />
+  </surface>
+  
+  <light>
+  	<position>3 10 5</position>
+  	<intensity>.5 .5 .5</intensity>
+  </light>
+</scene>
+

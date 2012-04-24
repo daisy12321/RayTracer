@@ -1,0 +1,13 @@
+Hw3 Gareth Aye, Daisy Zhuo
+4. Our optimizations included
+
+	- Adding local variables to reduce function calls in inner loops
+	- Removing redundant computations
+	- Where possible, using multiplication instead of division
+	- Removing unneccessary Vector3 instantiations
+	- Setting the rayIn.end to the minimum t we found
+	- Multithreading like it's 1999!
+	
+We saw some slowdown for small inputs since there's overhead to creating and running threads,
+but we saw a >4x speedup for our largest octopus scene (185s -> 45s)!
+
