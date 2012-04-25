@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import ray.light.Light;
 import ray.math.Color;
 import ray.math.Vector3;
+import ray.shader.Shader;
 
 /**
  * A simple ray tracer.
@@ -110,7 +111,7 @@ public class RayTracer {
 						double x = (ix + (dx + 0.5)/scene.getSamples())/width;
 						double y = (iy + (dy + 0.5)/scene.getSamples())/height;
 						cam.getRay(ray, x, y);
-						shadeRay(rayColor, scene, ray, lights, 1, 1, false);
+						shadeRay(rayColor, scene, ray, lights, Shader.MAXDEPTH, Shader.MINCONTRIBUTION, false); //TODO: could be wrong?
 						sum.add(rayColor);
 					}
 				}
@@ -157,9 +158,7 @@ public class RayTracer {
 		
 		toEye.sub(scene.camera.viewPoint, eyeRecord.location);
 		if (eyeRecord.surface != null) {
-			if (depth >= 1){ // TODO: implement contribution?
-			eyeRecord.surface.getShader().shade(outColor, scene, lights, toEye, eyeRecord, depth-1, 1, false);
-			}
+			eyeRecord.surface.getShader().shade(outColor, scene, lights, toEye, eyeRecord, depth, contribution, internal);
 		}
 	}
 
