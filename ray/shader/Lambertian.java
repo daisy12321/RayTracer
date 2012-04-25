@@ -47,7 +47,7 @@ public class Lambertian extends Shader {
 				l.sub(light.position, record.location);
 				l.normalize();
 				
-	      double x = Math.max(0, record.normal.dot(l));
+				double x = Math.max(0, record.normal.dot(l));
 				outColor.r += diffuseColor.r * light.intensity.r * x;
 				outColor.g += diffuseColor.g * light.intensity.g * x;
 				outColor.b += diffuseColor.b * light.intensity.b * x;

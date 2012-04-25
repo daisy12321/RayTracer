@@ -36,35 +36,38 @@ public class Glazed extends Shader {
 	public void shade(Color outColor, Scene scene, ArrayList<Light> lights,
 			Vector3 toEye, IntersectionRecord record, int depth,
 			double contribution, boolean internal) {
-        // TODO: fill in this function.
-		Vector3 l = new Vector3();
-		
-		for (Light light : lights) {
-			if (!isShadowed(scene, light, record)) {
-				l.sub(light.position, record.location);
-				l.normalize();
-				toEye.normalize();
-				
-				double cosTheta1 = Math.max(0,record.normal.dot(l));
-				double cosTheta2 = Math.sqrt(1-Math.pow(Math.sqrt((1-cosTheta1*cosTheta1))/refractiveIndex, 2));
-				//System.out.println(cosTheta1+" "+cosTheta2);
-
-				double Fp = (refractiveIndex*cosTheta1-cosTheta2)/(refractiveIndex*cosTheta1+cosTheta2);
-				double Fs = (cosTheta1-refractiveIndex*cosTheta2)/(cosTheta1+refractiveIndex*cosTheta2);
-				double R = 0.5 * (Fp*Fp + Fs*Fs);
-				//System.out.println(R);
-				
-				substrate.shade(outColor, scene, lights, toEye, record, depth, contribution, internal);
-				outColor.scale(1-R);
-				
-		        double d = record.normal.dot(toEye);
-		    	
-			}
-		}
         // Implement Fresnel equation (Shirley 13.1)
         // compute reflected contribution (make a recursive call to shadeRay)
         // compute substrate contribution (call substrate.shade(...))
 		
+		// compute reflected ray
+        double d = record.normal.dot(toEye);
+    	Vector3 r = new Vector3(record.normal.x, record.normal.y, record.normal.z);
+    	r.scale(2*d);
+    	r.sub(toEye);
+    	
+    	Ray refRay = new Ray(record.location, r);
 		
+		Color outColor1 = new Color();
+		Color outColor2 = new Color();
+		
+		// TODO: fix the recursive call
+    	RayTracer.shadeRay(outColor1, scene, refRay, lights, MAXDEPTH, MINCONTRIBUTION, false);
+    	substrate.shade(outColor2, scene, lights, toEye, record, 1, 1, false);
+		
+		double cosTheta1 = Math.max(0,record.normal.dot(toEye));
+		double cosTheta2 = Math.sqrt(1-(1-cosTheta1*cosTheta1)/(refractiveIndex * refractiveIndex));
+
+		double Fp = (refractiveIndex*cosTheta1-cosTheta2)/(refractiveIndex*cosTheta1+cosTheta2);
+		double Fs = (cosTheta1-refractiveIndex*cosTheta2)/(cosTheta1+refractiveIndex*cosTheta2);
+		double R = 0.5 * (Fp*Fp + Fs*Fs);
+
+    	outColor1.scale(R);
+		outColor2.scale(1-R);
+		
+		outColor.add(outColor1);
+		outColor.add(outColor2);
+
+		outColor.clamp(0, 1);
     }
 }

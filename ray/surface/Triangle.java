@@ -55,7 +55,7 @@ public class Triangle extends Surface {
     public boolean intersect(IntersectionRecord outRecord, Ray rayIn) {
 
         // TODO: fill in this function.
-
+    	
         // use strategy from book, pp. 78-79
 
         return false;
