@@ -51,6 +51,8 @@ public class Glazed extends Shader {
     	r.sub(toEye);
     	
     	Ray refRay = new Ray(record.location, r);
+    	refRay.start = Ray.EPSILON;
+    	refRay.end = 100000;
 		
 		Color outColor1 = new Color();
 		Color outColor2 = new Color();
