@@ -157,9 +157,7 @@ public class RayTracer {
 		
 		toEye.sub(scene.camera.viewPoint, eyeRecord.location);
 		if (eyeRecord.surface != null) {
-			if (depth >= 1){ // TODO: implement contribution?
-			eyeRecord.surface.getShader().shade(outColor, scene, lights, toEye, eyeRecord, depth-1, 1, false);
-			}
+			eyeRecord.surface.getShader().shade(outColor, scene, lights, toEye, eyeRecord, depth, contribution, internal);
 		}
 	}
 
