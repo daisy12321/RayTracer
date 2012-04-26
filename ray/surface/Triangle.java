@@ -2,6 +2,7 @@ package ray.surface;
 
 import ray.IntersectionRecord;
 import ray.Ray;
+import ray.math.Matrix3;
 import ray.math.Point3;
 import ray.math.Vector3;
 import ray.shader.Shader;
@@ -54,11 +55,47 @@ public class Triangle extends Surface {
      */
     public boolean intersect(IntersectionRecord outRecord, Ray rayIn) {
 
-        // TODO: fill in this function.
+    	Vector3 a_minus_b = new Vector3();
+    	a_minus_b.sub(owner.getVertex(index[0]), owner.getVertex(index[1]));
     	
-        // use strategy from book, pp. 78-79
+    	Vector3 a_minus_c = new Vector3();
+    	a_minus_c.sub(owner.getVertex(index[0]), owner.getVertex(index[2]));
+    	
+    	Vector3 a_minus_e = new Vector3();
+    	a_minus_e.sub(owner.getVertex(index[0]), rayIn.origin);
+    	
+    	
+    	Matrix3 A = new Matrix3();
+    	A.setByColumn(a_minus_b, a_minus_c, rayIn.direction);
+    	double detA = A.determinant();
+    	
+    	Matrix3 T = new Matrix3();
+    	T.setByColumn(a_minus_b, a_minus_c, a_minus_e);
+    	
+    	double tmpT = T.determinant()/detA;
 
-        return false;
+    	if (tmpT <rayIn.start || tmpT > rayIn.end) return false;
+    	
+    	
+    	Matrix3 C = new Matrix3();
+    	C.setByColumn(a_minus_b, a_minus_e, rayIn.direction);
+    	double gamma = C.determinant()/detA;
+    	
+    	if (gamma < 0 || gamma > 1) return false;
+    	
+    	Matrix3 B = new Matrix3();
+    	B.setByColumn(a_minus_e, a_minus_c, rayIn.direction);
+    	double beta = B.determinant()/detA;
+    	
+    	if (beta < 0 || beta > 1- gamma) return false;
+
+    	outRecord.t = rayIn.end = tmpT;
+    	outRecord.surface = this;
+		outRecord.location.add(rayIn.origin, Vector3.getScaledVector(rayIn.direction, outRecord.t));
+		if (owner.existsNormals()) {
+			outRecord.normal.set(norm); 
+		}
+        return true;
     }
 
     public String toString() {

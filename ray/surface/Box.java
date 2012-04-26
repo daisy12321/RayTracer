@@ -6,7 +6,7 @@ import ray.math.Point3;
 import ray.math.Vector3;
 
 public class Box extends Surface {
-	private final static Double EPSILON = 0.000001;
+	private final static Double EPSILON = 1e-10;
 	
 	/* The corner of the box with the smallest x, y, and z components. */
 	protected final Point3 minPt = new Point3();

@@ -40,6 +40,10 @@ public class Glazed extends Shader {
         // compute reflected contribution (make a recursive call to shadeRay)
         // compute substrate contribution (call substrate.shade(...))
 		
+		if (depth > MAXDEPTH || contribution < MINCONTRIBUTION){ 
+			return;
+		}
+		toEye.normalize();
 		// compute reflected ray
         double d = record.normal.dot(toEye);
     	Vector3 r = new Vector3(record.normal.x, record.normal.y, record.normal.z);
@@ -47,6 +51,8 @@ public class Glazed extends Shader {
     	r.sub(toEye);
     	
     	Ray refRay = new Ray(record.location, r);
+    	refRay.start = Ray.EPSILON;
+    	refRay.end = Double.POSITIVE_INFINITY;
 		
 		Color outColor1 = new Color();
 		Color outColor2 = new Color();
@@ -57,14 +63,10 @@ public class Glazed extends Shader {
 		double Fp = (refractiveIndex*cosTheta1-cosTheta2)/(refractiveIndex*cosTheta1+cosTheta2);
 		double Fs = (cosTheta1-refractiveIndex*cosTheta2)/(cosTheta1+refractiveIndex*cosTheta2);
 		double R = 0.5 * (Fp*Fp + Fs*Fs);
-		// TODO: fix the recursive call
-		//if (depth >= 1 && R >= contribution){
-			RayTracer.shadeRay(outColor1, scene, refRay, lights, depth-1, 1, false);
-			
-		//}
 		
-    	substrate.shade(outColor2, scene, lights, toEye, record, 1, 1, false);
-
+		RayTracer.shadeRay(outColor1, scene, refRay, lights, depth+1, R, false);
+		
+		substrate.shade(outColor2, scene, lights, toEye, record, 1, 1, false);
 
     	outColor1.scale(R);
 		outColor2.scale(1-R);

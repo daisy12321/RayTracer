@@ -15,7 +15,7 @@ public class Ray {
    * floating point computations.  It is often useful to have one global
    * value across the ray tracer that stands for a "small amount".
    */
-  public static final double EPSILON = 1e-12 ;
+  public static final double EPSILON = 1e-10 ;
 
   /** The starting point of the ray. */
   public final Point3 origin = new Point3();
