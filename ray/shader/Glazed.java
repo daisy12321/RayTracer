@@ -59,7 +59,7 @@ public class Glazed extends Shader {
 		Color outColor1 = new Color();
 		Color outColor2 = new Color();
 		
-		double cosTheta1 = Math.max(0, record.normal.dot(toEye));
+		double cosTheta1 = Math.abs(record.normal.dot(toEye));
 		double cosTheta2 = Math.sqrt(1 - (1 - cosTheta1 * cosTheta1) / (refractiveIndex * refractiveIndex));
 
 		double Fp = (refractiveIndex * cosTheta1 - cosTheta2) / (refractiveIndex * cosTheta1 + cosTheta2);

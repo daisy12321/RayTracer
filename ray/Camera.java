@@ -53,13 +53,11 @@ public class Camera {
 	 * Initialize the derived view variables to prepare for using the camera.
 	 */
 	public void initView() {
-		basisW.set(projNormal);
-		basisW.normalize();
-		basisU.cross(viewUp, basisW);
-		basisU.normalize();
-		basisV.cross(basisW, basisU);
-		basisV.normalize();
-		initialized = true;
+        basisW.set(projNormal);
+        basisW.normalize();
+        basisU.cross(viewUp, basisW);
+        basisU.normalize();
+        basisV.cross(basisW,  basisU);
 	}
 	
 	/**
@@ -74,11 +72,14 @@ public class Camera {
 			initView();
 		}
     
-		outRay.origin.set(viewPoint);
-		outRay.start = 0;
-		outRay.end = Double.POSITIVE_INFINITY;
-		outRay.direction.set(Vector3.getScaledVector(basisW, -projDistance));
-		outRay.direction.add(Vector3.getScaledVector(basisU, inU * viewWidth - viewWidth * 0.5));
-		outRay.direction.add(Vector3.getScaledVector(basisV, inV * viewHeight - viewHeight * 0.5));
+        double u = (inU - 0.5) * viewWidth;
+        double v = (inV - 0.5) * viewHeight;
+        Vector3 dir = new Vector3();
+        dir.scaleAdd(-projDistance, basisW);
+        dir.scaleAdd(u, basisU);
+        dir.scaleAdd(v, basisV);
+        outRay.set(viewPoint, dir);
+        outRay.start = 0;
+        outRay.end = Double.POSITIVE_INFINITY;
 	}
 }

@@ -46,13 +46,20 @@ public abstract class Shader {
 	 * Utility method to compute shadows.
 	 */
 	protected boolean isShadowed(Scene scene, Light light, IntersectionRecord record) {
-		Vector3 shadowDirection = new Vector3();
-		shadowDirection.sub(light.position, record.location);
-		double distance = shadowDirection.length();
-		shadowDirection.normalize();
-		Ray shadowRay = new Ray(record.location, shadowDirection);
-		shadowRay.start = Ray.EPSILON;
-		shadowRay.end = distance - Ray.EPSILON;
-		return scene.getAnyIntersection(shadowRay);
+        boolean doShadows = true;
+        
+        if (!doShadows)
+            return false;
+                
+        Ray shadowRay = new Ray();
+                
+        // Setup the shadow ray to start at surface and end at light
+        shadowRay.origin.set(record.location);
+        shadowRay.direction.sub(light.position, record.location);
+                
+        //Set the ray to end at the light
+        shadowRay.makeOffsetSegment(1.0);
+                
+        return scene.getAnyIntersection(shadowRay);
 	}
 }

@@ -25,9 +25,9 @@ public class Scene {
 	public void addLight(Light toAdd) { lights.add(toAdd); }
 	public ArrayList<Light> getLights() { return this.lights; }
 	
-	/** The list of surfaces for the scene. */
-	protected ArrayList<Surface> surfaces = new ArrayList<Surface>();
-	public void addSurface(Surface toAdd) { surfaces.add(toAdd); }
+    /** The list of surfaces for the scene. */
+    protected ArrayList<Surface> surfaces = new ArrayList<Surface>();
+    public void addSurface(Surface toAdd) { toAdd.addTo(surfaces); }
 	
 	/** The list of materials in the scene. */
 	protected ArrayList<Shader> shaders = new ArrayList<Shader>();

@@ -111,7 +111,8 @@ public class RayTracer {
 						double x = (ix + (dx + 0.5)/scene.getSamples())/width;
 						double y = (iy + (dy + 0.5)/scene.getSamples())/height;
 						cam.getRay(ray, x, y);
-						shadeRay(rayColor, scene, ray, lights, Shader.MAXDEPTH, Shader.MINCONTRIBUTION, false); //TODO: could be wrong?
+						
+						shadeRay(rayColor, scene, ray, lights, 1, 1, false); 
 						sum.add(rayColor);
 					}
 				}
@@ -152,11 +153,14 @@ public class RayTracer {
 
 		IntersectionRecord eyeRecord = new IntersectionRecord();
 		Vector3 toEye = new Vector3();
-		if (!scene.intersect(eyeRecord, ray, false)) {
-			return;
-		}
 		
-		toEye.sub(scene.camera.viewPoint, eyeRecord.location);
+		eyeRecord.surface = null;
+        
+        scene.getFirstIntersection(eyeRecord, ray);
+        if (eyeRecord.surface == null)
+            return;
+        
+		toEye.sub(ray.origin, eyeRecord.location);
 		if (eyeRecord.surface != null) {
 			eyeRecord.surface.getShader().shade(outColor, scene, lights, toEye, eyeRecord, depth, contribution, internal);
 		}

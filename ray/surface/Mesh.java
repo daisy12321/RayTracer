@@ -189,13 +189,6 @@ public class Mesh extends Surface{
 
         
     public boolean intersect(IntersectionRecord outRecord, Ray rayIn) {
-    	Boolean intersect = false;
-    	for (Triangle triangle : triangles) {
-            if (triangle.intersect(outRecord, rayIn)) {
-            	intersect = true;
-            }
-        }
-    	if (intersect) return true;
 		return false;
     }
         
