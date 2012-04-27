@@ -40,14 +40,16 @@ public class Glazed extends Shader {
         // compute reflected contribution (make a recursive call to shadeRay)
         // compute substrate contribution (call substrate.shade(...))
 		
-		if (depth > MAXDEPTH || contribution < MINCONTRIBUTION){ 
+		if (depth > MAXDEPTH || contribution < MINCONTRIBUTION) { 
 			return;
 		}
+		
 		toEye.normalize();
+		
 		// compute reflected ray
         double d = record.normal.dot(toEye);
     	Vector3 r = new Vector3(record.normal.x, record.normal.y, record.normal.z);
-    	r.scale(2*d);
+    	r.scale(2 * d);
     	r.sub(toEye);
     	
     	Ray refRay = new Ray(record.location, r);
@@ -57,19 +59,19 @@ public class Glazed extends Shader {
 		Color outColor1 = new Color();
 		Color outColor2 = new Color();
 		
-		double cosTheta1 = Math.max(0,record.normal.dot(toEye));
-		double cosTheta2 = Math.sqrt(1-(1-cosTheta1*cosTheta1)/(refractiveIndex * refractiveIndex));
+		double cosTheta1 = Math.max(0, record.normal.dot(toEye));
+		double cosTheta2 = Math.sqrt(1 - (1 - cosTheta1 * cosTheta1) / (refractiveIndex * refractiveIndex));
 
-		double Fp = (refractiveIndex*cosTheta1-cosTheta2)/(refractiveIndex*cosTheta1+cosTheta2);
-		double Fs = (cosTheta1-refractiveIndex*cosTheta2)/(cosTheta1+refractiveIndex*cosTheta2);
-		double R = 0.5 * (Fp*Fp + Fs*Fs);
+		double Fp = (refractiveIndex * cosTheta1 - cosTheta2) / (refractiveIndex * cosTheta1 + cosTheta2);
+		double Fs = (cosTheta1 - refractiveIndex * cosTheta2) / (cosTheta1 + refractiveIndex * cosTheta2);
+		double R = 0.5 * (Math.pow(Fp, 2) + Math.pow(Fs, 2));
 		
-		RayTracer.shadeRay(outColor1, scene, refRay, lights, depth+1, R, false);
+		RayTracer.shadeRay(outColor1, scene, refRay, lights, depth + 1, R, false);
 		
 		substrate.shade(outColor2, scene, lights, toEye, record, 1, 1, false);
 
     	outColor1.scale(R);
-		outColor2.scale(1-R);
+		outColor2.scale(1 - R);
 		
 		outColor.add(outColor1);
 		outColor.add(outColor2);

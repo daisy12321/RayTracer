@@ -54,7 +54,6 @@ public class Triangle extends Surface {
      * @return true if the surface intersects the ray
      */
     public boolean intersect(IntersectionRecord outRecord, Ray rayIn) {
-
     	Vector3 a_minus_b = new Vector3();
     	a_minus_b.sub(owner.getVertex(index[0]), owner.getVertex(index[1]));
     	
@@ -72,22 +71,27 @@ public class Triangle extends Surface {
     	Matrix3 T = new Matrix3();
     	T.setByColumn(a_minus_b, a_minus_c, a_minus_e);
     	
-    	double tmpT = T.determinant()/detA;
+    	double tmpT = T.determinant() / detA;
 
-    	if (tmpT <rayIn.start || tmpT > rayIn.end) return false;
-    	
+    	if ((tmpT < rayIn.start) || (tmpT > rayIn.end)) {
+    		return false;
+    	}
     	
     	Matrix3 C = new Matrix3();
     	C.setByColumn(a_minus_b, a_minus_e, rayIn.direction);
-    	double gamma = C.determinant()/detA;
+    	double gamma = C.determinant() / detA;
     	
-    	if (gamma < 0 || gamma > 1) return false;
+    	if ((gamma < 0) || (gamma > 1)) {
+    		return false;
+    	}
     	
     	Matrix3 B = new Matrix3();
     	B.setByColumn(a_minus_e, a_minus_c, rayIn.direction);
-    	double beta = B.determinant()/detA;
+    	double beta = B.determinant() / detA;
     	
-    	if (beta < 0 || beta > 1- gamma) return false;
+    	if ((beta < 0) || (beta > 1 - gamma)) {
+    		return false;
+    	}
 
     	outRecord.t = rayIn.end = tmpT;
     	outRecord.surface = this;
@@ -95,6 +99,7 @@ public class Triangle extends Surface {
 		if (owner.existsNormals()) {
 			outRecord.normal.set(norm); 
 		}
+		
         return true;
     }
 
