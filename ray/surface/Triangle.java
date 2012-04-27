@@ -94,6 +94,8 @@ public class Triangle extends Surface {
 		outRecord.location.add(rayIn.origin, Vector3.getScaledVector(rayIn.direction, outRecord.t));
 		if (owner.existsNormals()) {
 			outRecord.normal.set(norm); 
+		} else {
+			
 		}
         return true;
     }
