@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+  <shader[" name=\"star0\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>1.0 1.0 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star1\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.9875 0.99 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star2\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.975 0.98 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star3\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.9625 0.97 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star4\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.95 0.96 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star5\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.9375 0.95 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star6\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.925 0.94 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star7\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.9125 0.9299999999999999 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star8\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.9 0.92 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star9\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.8875 0.91 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star10\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.875 0.9 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star11\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.8625 0.89 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star12\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.85 0.88 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star13\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.8375 0.87 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star14\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.825 0.86 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star15\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.8125 0.85 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star16\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.8 0.84 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star17\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.7875 0.83 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star18\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.775 0.8200000000000001 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star19\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.7625 0.81 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star20\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.75 0.8 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star21\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.7375 0.79 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star22\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.725 0.78 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star23\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.7125 0.77 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star24\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.7 0.76 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star25\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.6875 0.75 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star26\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.675 0.74 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star27\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.6625 0.73 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star28\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.65 0.72 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star29\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.6375 0.71 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star30\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.625 0.7 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star31\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.6125 0.69 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star32\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.6 0.6799999999999999 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star33\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.5875 0.6699999999999999 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star34\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.575 0.6599999999999999 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star35\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.5625 0.65 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star36\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.55 0.64 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star37\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.5375 0.63 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star38\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.525 0.62 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star39\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.5125 0.61 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star40\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.5 0.6 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star41\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.48750000000000004 0.5900000000000001 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star42\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.475 0.5800000000000001 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star43\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.4625 0.5700000000000001 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star44\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.44999999999999996 0.56 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star45\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.4375 0.55 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star46\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.42500000000000004 0.54 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star47\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.4125 0.53 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star48\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.4 0.52 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star49\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.38749999999999996 0.51 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star50\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.375 0.5 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star51\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.36250000000000004 0.49 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star52\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.35 0.48 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star53\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.3375 0.47 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star54\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.32499999999999996 0.45999999999999996 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star55\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.3125 0.44999999999999996 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star56\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.30000000000000004 0.43999999999999995 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star57\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.2875 0.43000000000000005 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star58\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.275 0.42000000000000004 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star59\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.26249999999999996 0.41000000000000003 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star60\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.25 0.4 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star61\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.23750000000000004 0.39 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star62\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.22499999999999998 0.38 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star63\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.21250000000000002 0.37 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star64\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.19999999999999996 0.36 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star65\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.1875 0.35 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star66\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.17500000000000004 0.33999999999999997 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star67\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.16249999999999998 0.32999999999999996 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star68\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.15000000000000002 0.31999999999999995 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star69\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.13749999999999996 0.31000000000000005 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star70\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.125 0.30000000000000004 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star71\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.11250000000000004 0.29000000000000004 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star72\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.09999999999999998 0.28 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star73\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.08750000000000002 0.27 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star74\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.07499999999999996 0.26 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star75\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.0625 0.25 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star76\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.050000000000000044 0.24 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star77\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.03749999999999998 0.22999999999999998 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star78\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.025000000000000022 0.21999999999999997 1</diffuseColor[]>
+  </shader[]>
+  <shader[" name=\"star79\"", " type=\"Lambertian\""]>
+    <diffuseColor[]>0.012499999999999956 0.20999999999999996 1</diffuseColor[]>
+  </shader[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star0\""] />
+    <center[]>-1.3629455882805903 5.428416490052817 -6.205861630297543</center[]>
+    <radius[]>0.0395709575339884</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star1\""] />
+    <center[]>-2.2428569605118938 1.7402588289627485 -0.35530915263994345</center[]>
+    <radius[]>0.08290784254300333</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star2\""] />
+    <center[]>1.1332082332948907 4.844347223288384 5.571828577681725</center[]>
+    <radius[]>0.04350729852912853</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star3\""] />
+    <center[]>6.733608917484785 3.461095000412219 2.449842493393474</center[]>
+    <radius[]>0.06622160526059402</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star4\""] />
+    <center[]>6.9056072962172586 2.396125801035821 -0.04101241696603708</center[]>
+    <radius[]>0.10914612669952078</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star5\""] />
+    <center[]>3.6133583703750993 1.9579602077297538 6.258663030013503</center[]>
+    <radius[]>0.038318685821954836</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star6\""] />
+    <center[]>5.54384179520752 6.903398632486556 6.738237458881546</center[]>
+    <radius[]>0.06013244800620187</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star7\""] />
+    <center[]>-2.7531853173543634 4.349318779902755 -1.2316044377409874</center[]>
+    <radius[]>0.08880357818768767</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star8\""] />
+    <center[]>-1.4530096882570795 4.965471442318047 -1.3416454705990661</center[]>
+    <radius[]>0.10003849520689481</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star9\""] />
+    <center[]>-5.555890906103046 4.841771100309837 -6.509888684553033</center[]>
+    <radius[]>0.09948779390173215</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star10\""] />
+    <center[]>-5.720286495282473 5.926405650680016 2.66017005094084</center[]>
+    <radius[]>0.029235392427361697</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star11\""] />
+    <center[]>1.4510960477536834 4.385105275046667 6.824919696010367</center[]>
+    <radius[]>0.03825486718126536</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star12\""] />
+    <center[]>-6.0419898241328776 0.8410727444488608 6.038061069452889</center[]>
+    <radius[]>0.09782473275591846</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star13\""] />
+    <center[]>-6.300716615009726 6.3336928915798465 6.545012436337062</center[]>
+    <radius[]>0.0504116313039983</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star14\""] />
+    <center[]>-4.530031953158946 4.188809031886484 -4.0404649793100536</center[]>
+    <radius[]>0.11829634838309225</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star15\""] />
+    <center[]>1.3703969256400423 3.5911481082809495 3.5813599505672435</center[]>
+    <radius[]>0.03004575750861016</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star16\""] />
+    <center[]>2.732465548128946 3.393372521038659 1.7562003880487946</center[]>
+    <radius[]>0.09243215764825882</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star17\""] />
+    <center[]>0.2523226979621649 4.8897570324197455 0.20710180933761713</center[]>
+    <radius[]>0.09638119161606426</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star18\""] />
+    <center[]>5.55742039274277 3.6228519815642755 -1.3724737628954804</center[]>
+    <radius[]>0.05599696148983602</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star19\""] />
+    <center[]>2.9887318106312204 0.8350274719677284 5.423642337320841</center[]>
+    <radius[]>0.07535007132916394</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star20\""] />
+    <center[]>-0.17064778387314128 2.7418873398239274 0.6733050322306839</center[]>
+    <radius[]>0.09963128307925079</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star21\""] />
+    <center[]>2.1280968566189724 5.086856377221365 -6.284392271675795</center[]>
+    <radius[]>0.06693616312068604</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star22\""] />
+    <center[]>-5.80498730071802 2.845069603244033 -0.3108790072039751</center[]>
+    <radius[]>0.08819542595323415</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star23\""] />
+    <center[]>3.151804041605038 4.715285564152111 -0.12914817658803823</center[]>
+    <radius[]>0.11521191483872423</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star24\""] />
+    <center[]>-0.9283678003673872 2.474404717796411 -5.061067026184198</center[]>
+    <radius[]>0.0521085633632995</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star25\""] />
+    <center[]>1.579397766285508 4.576226404919766 -1.7425573020216287</center[]>
+    <radius[]>0.052533483688457575</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star26\""] />
+    <center[]>-6.813374544949529 0.3431272571589218 -3.9493665827201347</center[]>
+    <radius[]>0.035124114680549635</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star27\""] />
+    <center[]>2.6780206548552172 3.286813703900432 -0.22286215900478545</center[]>
+    <radius[]>0.10402677178465689</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star28\""] />
+    <center[]>4.40141168301345 5.5240516727560225 2.733441231721935</center[]>
+    <radius[]>0.09506156517536682</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star29\""] />
+    <center[]>6.190468337313394 5.2730768428401715 -2.449014346568326</center[]>
+    <radius[]>0.04376408310496406</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star30\""] />
+    <center[]>-5.574669899963506 1.4215420849223488 5.703169466573769</center[]>
+    <radius[]>0.11420824986930653</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star31\""] />
+    <center[]>1.5398470311323091 5.085651677802853 6.570037915406207</center[]>
+    <radius[]>0.10880367358402313</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star32\""] />
+    <center[]>-0.5036786384581351 2.6121011666599854 -5.20009480248081</center[]>
+    <radius[]>0.028104240709663664</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star33\""] />
+    <center[]>-2.163983952899831 5.97527628889628 5.00320864252908</center[]>
+    <radius[]>0.03618210618240424</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star34\""] />
+    <center[]>-5.510187361587363 3.8366061014617294 0.7239801858692667</center[]>
+    <radius[]>0.11784798547096709</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star35\""] />
+    <center[]>-2.231555239478494 4.168786699254528 -1.5383112296356574</center[]>
+    <radius[]>0.08302308484346113</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star36\""] />
+    <center[]>0.31511433376120923 0.8727630406318777 6.164821009711263</center[]>
+    <radius[]>0.11767472863681563</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star37\""] />
+    <center[]>5.651590833462652 3.2332462910882986 1.9644912743058978</center[]>
+    <radius[]>0.08838028968939335</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star38\""] />
+    <center[]>2.6647752878821507 4.682175739485065 3.2572244458073936</center[]>
+    <radius[]>0.04396822643962546</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star39\""] />
+    <center[]>0.6247129930354145 5.216173329325786 -2.5726563478295876</center[]>
+    <radius[]>0.10534127257492365</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star40\""] />
+    <center[]>6.30060106179139 2.74995972735563 -5.4309269033809855</center[]>
+    <radius[]>0.060764899947848075</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star41\""] />
+    <center[]>-3.635604565033413 2.236322651864119 6.442523543811541</center[]>
+    <radius[]>0.05232512287678488</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star42\""] />
+    <center[]>4.343569250211406 0.2602929006577427 4.820605685011303</center[]>
+    <radius[]>0.12068416998433854</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star43\""] />
+    <center[]>3.332512355753682 1.360010439985077 6.894266719081024</center[]>
+    <radius[]>0.08358140471684551</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star44\""] />
+    <center[]>6.7471480302789235 3.294027439366501 1.1581719021550487</center[]>
+    <radius[]>0.08330932096990945</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star45\""] />
+    <center[]>-5.617719316824849 2.384058221578377 -2.5162533940441447</center[]>
+    <radius[]>0.08571495001738252</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star46\""] />
+    <center[]>2.2227121480818237 6.992191493305959 3.9711753628561297</center[]>
+    <radius[]>0.1200405455285242</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star47\""] />
+    <center[]>-1.3402258920905936 4.5923399750322185 -0.5352850697530966</center[]>
+    <radius[]>0.0742404824000395</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star48\""] />
+    <center[]>-1.3854818414454764 1.9384432004341376 -4.390483637350202</center[]>
+    <radius[]>0.03703642958030315</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star49\""] />
+    <center[]>6.895429442996864 1.199857316994544 3.975350029128508</center[]>
+    <radius[]>0.049105096545077255</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star50\""] />
+    <center[]>-0.08883078777852571 6.6185923531965996 -6.678415016839918</center[]>
+    <radius[]>0.10436239672182676</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star51\""] />
+    <center[]>3.595985998534477 3.3541628711555034 3.9728185531072153</center[]>
+    <radius[]>0.10123510944339331</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star52\""] />
+    <center[]>6.506871225657786 3.684281776565933 -6.163554815393014</center[]>
+    <radius[]>0.03873690213385372</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star53\""] />
+    <center[]>-5.879991268706946 5.281080137787251 2.9961770132483885</center[]>
+    <radius[]>0.08739605836202155</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star54\""] />
+    <center[]>1.2639542651202031 0.5217457171129425 -2.841057071010363</center[]>
+    <radius[]>0.08941737905023978</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star55\""] />
+    <center[]>2.4931451731341987 3.6373441748759037 -2.0995630438209005</center[]>
+    <radius[]>0.05064413735725211</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star56\""] />
+    <center[]>2.916310539964707 4.150955950330399 4.928562484812053</center[]>
+    <radius[]>0.1021529450966428</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star57\""] />
+    <center[]>-3.6268985894574772 5.270282566512464 1.4723348021279694</center[]>
+    <radius[]>0.09990054980879046</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star58\""] />
+    <center[]>5.952537653457515 0.5523916026607258 4.935624737596813</center[]>
+    <radius[]>0.05032762365608023</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star59\""] />
+    <center[]>5.227393571307228 2.528044323314826 5.070938659444421</center[]>
+    <radius[]>0.04560325749888116</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star60\""] />
+    <center[]>-3.126951603553515 4.024277395118338 1.2097680968775038</center[]>
+    <radius[]>0.026356339025142374</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star61\""] />
+    <center[]>-0.05081938139681075 6.947304414373785 -5.039684968553868</center[]>
+    <radius[]>0.061447843043180274</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star62\""] />
+    <center[]>-4.920464195281684 6.3013853581535795 3.978162057993295</center[]>
+    <radius[]>0.031218201871617692</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star63\""] />
+    <center[]>-6.293757682648347 5.785611916600905 -5.495924218815581</center[]>
+    <radius[]>0.04591021533511541</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star64\""] />
+    <center[]>1.6373544207693307 0.9193700101279567 0.28583413444624917</center[]>
+    <radius[]>0.08715097787493556</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star65\""] />
+    <center[]>-0.5991562472244469 2.026706042947633 4.0966756329626595</center[]>
+    <radius[]>0.06389802269665415</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star66\""] />
+    <center[]>5.439266663553006 2.1779005547647396 1.1062676812447023</center[]>
+    <radius[]>0.036512708240061864</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star67\""] />
+    <center[]>-4.96946309656426 6.249952455544072 4.8240637913753055</center[]>
+    <radius[]>0.028582534413891483</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star68\""] />
+    <center[]>-2.214942683752944 5.6768282973182345 4.594604870631985</center[]>
+    <radius[]>0.10887289772217296</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star69\""] />
+    <center[]>-6.570296130197973 0.2614960729867324 -4.473002664221726</center[]>
+    <radius[]>0.05247489178186004</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star70\""] />
+    <center[]>5.028448943475022 0.8757925124073248 3.1433430548159773</center[]>
+    <radius[]>0.06871066582829058</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star71\""] />
+    <center[]>-3.3668631346112123 1.056940245444991 6.663692312479018</center[]>
+    <radius[]>0.029948558627759216</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star72\""] />
+    <center[]>-3.4831360240305402 5.46873035503716 -6.917771654769796</center[]>
+    <radius[]>0.12196481716704954</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star73\""] />
+    <center[]>1.1598310357823927 6.189827123484001 -4.821315867487211</center[]>
+    <radius[]>0.10985496646218207</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star74\""] />
+    <center[]>2.247377193873481 3.877272068652475 6.739673538625583</center[]>
+    <radius[]>0.07305289047468712</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star75\""] />
+    <center[]>-0.8510905016010373 5.040425594136686 -1.3907096832073789</center[]>
+    <radius[]>0.052990410742821306</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star76\""] />
+    <center[]>4.087415344118149 6.765206507631442 -1.8565952015915972</center[]>
+    <radius[]>0.12030551087657507</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star77\""] />
+    <center[]>4.107648505555998 0.6655405649027233 2.4642779411820417</center[]>
+    <radius[]>0.032466581485357485</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star78\""] />
+    <center[]>-0.9586695029083252 3.0071819252593537 3.5678067725300977</center[]>
+    <radius[]>0.10304294390334728</radius[]>
+  </surface[]>
+  <surface[" type=\"Sphere\""]>
+    <shader[" ref=\"star79\""] />
+    <center[]>-6.359353752194141 6.1641745426620265 3.4428185698102194</center[]>
+    <radius[]>0.09489196172999262</radius[]>
+  </surface[]>

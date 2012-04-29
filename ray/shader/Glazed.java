@@ -73,7 +73,7 @@ public class Glazed extends Shader {
     	outColor1.scale(R);
 		outColor2.scale(1 - R);
 		
-		outColor.add(outColor1);
+		outColor.set(outColor1);
 		outColor.add(outColor2);
 
 		outColor.clamp(0, 1);
