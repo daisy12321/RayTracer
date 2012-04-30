@@ -714,7 +714,7 @@
   </surface>
   <surface type="Sphere">
   	<center>50 -50 0</center>
-  	<radius>68</radius>
+  	<radius>67.5</radius>
   	<shader ref="blueglazed" />
   </surface>
 
@@ -724,19 +724,19 @@
   </surface>
     <surface type="Mesh">
   	<shader ref="purple" />
-	<data>bunnySmallR270Tran.msh</data>
+	<data>bunnySmallR270TRAN.msh</data>
   </surface>
     <surface type="Mesh">
   	<shader ref="red" />
-	<data>bunnySmallerR270Tran.msh</data>
+	<data>bunnySmallerR270TRAN.msh</data>
   </surface>
     <surface type="Mesh">
   	<shader ref="yellow" />
-	<data>bunnySmallR180Tran.msh</data>
+	<data>bunnySmallR180TRAN.msh</data>
   </surface>
     <surface type="Mesh">
   	<shader ref="red" />
-	<data>bunnySmallR180TranFar.msh</data>
+	<data>bunnySmallR180TRANFar.msh</data>
   </surface>
   <light>
   	<position>3 10 5</position>
