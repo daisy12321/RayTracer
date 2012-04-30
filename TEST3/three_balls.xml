@@ -2,11 +2,11 @@
 
 <scene>
   <camera>
-    <viewPoint>0.25 1 15</viewPoint>
-    <viewDir>0 0 0</viewDir>
-    <projNormal>0 0 1</projNormal>
-    <viewUp>0.25 1 1</viewUp>
-    <projDistance>20</projDistance>
+    <viewPoint>-1 -4 1</viewPoint>
+    <viewDir>1 4 -1</viewDir>
+    <projNormal>-1 -4 1</projNormal>
+    <viewUp>0 0 1</viewUp>
+    <projDistance>4</projDistance>
     <viewWidth>4.8</viewWidth>
     <viewHeight>2.7</viewHeight>
   </camera>
@@ -52,19 +52,19 @@
   
   <surface type="Sphere">
     <shader ref="redglazed" />
-    <center>-1 1 0</center>
+    <center>-1 0 -0.65</center>
     <radius>0.35</radius>
   </surface>
   
   <surface type="Sphere">
     <shader ref="greenglazed" />
-    <center>0 1.1 0</center>
+    <center>0 0 -0.65</center>
     <radius>0.35</radius>
   </surface>
   
   <surface type="Sphere">
     <shader ref="blueglazed" />
-    <center>1 1.2 0</center>
+    <center>1 0 -0.65</center>
     <radius>0.35</radius>
   </surface>
   
