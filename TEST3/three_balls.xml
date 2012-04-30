@@ -23,8 +23,8 @@
   
   <shader name="redglazed" type="Glazed">
     <refractiveIndex>3</refractiveIndex>
-     <substrate type="Lambertian">
-       <diffuseColor>1 .05 .2</diffuseColor>
+    <substrate type="Lambertian">
+      <diffuseColor>1 .05 .2</diffuseColor>
     </substrate>
   </shader>
   
@@ -39,8 +39,11 @@
     <diffuseColor>0 0 0</diffuseColor>
   </shader>
   
-  <shader name="white" type="Lambertian">
-    <diffuseColor>1 1 1</diffuseColor>
+  <shader name="white" type="Glazed">
+  	<refractiveIndex>3</refractiveIndex>
+  	<substrate type="Lambertian">
+      <diffuseColor>1 1 1</diffuseColor>
+    </substrate>
   </shader>
   
   <shader name="glazed" type="Glazed">
@@ -251,8 +254,8 @@
 
   <surface type="Box">
 	<shader ref="white" />
-    <minPt>3.5 -0.5 -1</minPt>
-    <maxPt>4 0 -1</maxPt>
+    <minPt>3.5 0.5 -1</minPt>
+    <maxPt>4 1 -1</maxPt>
   </surface>
   
   <surface type="Box">
@@ -427,6 +430,552 @@
   <shader ref="white" />
     <minPt>2.5 2.5 -1</minPt>
     <maxPt>3 3 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  <shader ref="white" />
+    <minPt>3.5 2.5 -1</minPt>
+    <maxPt>4 3 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3 3 -1</minPt>
+    <maxPt>-2.5 3.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2 3 -1</minPt>
+    <maxPt>-1.5 3.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1 3 -1</minPt>
+    <maxPt>-0.5 3.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0 3 -1</minPt>
+    <maxPt>0.5 3.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1 3 -1</minPt>
+    <maxPt>1.5 3.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2 3 -1</minPt>
+    <maxPt>2.5 3.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3 3 -1</minPt>
+    <maxPt>3.5 3.5 -1</maxPt>
+  </surface>
+  
+    <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3.5 3.5 -1</minPt>
+    <maxPt>-3 4 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2.5 3.5 -1</minPt>
+    <maxPt>-2 4 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1.5 3.5 -1</minPt>
+    <maxPt>-1 4 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-0.5 3.5 -1</minPt>
+    <maxPt>0 4 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0.5 3.5 -1</minPt>
+    <maxPt>1 4 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1.5 3.5 -1</minPt>
+    <maxPt>2 4 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2.5 3.5 -1</minPt>
+    <maxPt>3 4 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3.5 3.5 -1</minPt>
+    <maxPt>4 4 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3 4 -1</minPt>
+    <maxPt>-2.5 4.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2 4 -1</minPt>
+    <maxPt>-1.5 4.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1 4 -1</minPt>
+    <maxPt>-0.5 4.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0 4 -1</minPt>
+    <maxPt>0.5 4.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1 4 -1</minPt>
+    <maxPt>1.5 4.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2 4 -1</minPt>
+    <maxPt>2.5 4.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3 4 -1</minPt>
+    <maxPt>3.5 4.5 -1</maxPt>
+  </surface>
+  
+    <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3.5 4.5 -1</minPt>
+    <maxPt>-3 5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2.5 4.5 -1</minPt>
+    <maxPt>-2 5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1.5 4.5 -1</minPt>
+    <maxPt>-1 5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-0.5 4.5 -1</minPt>
+    <maxPt>0 5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0.5 4.5 -1</minPt>
+    <maxPt>1 5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1.5 4.5 -1</minPt>
+    <maxPt>2 5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2.5 4.5 -1</minPt>
+    <maxPt>3 5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3.5 4.5 -1</minPt>
+    <maxPt>4 5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3 5 -1</minPt>
+    <maxPt>-2.5 5.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2 5 -1</minPt>
+    <maxPt>-1.5 5.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1 5 -1</minPt>
+    <maxPt>-0.5 5.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0 5 -1</minPt>
+    <maxPt>0.5 5.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1 5 -1</minPt>
+    <maxPt>1.5 5.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2 5 -1</minPt>
+    <maxPt>2.5 5.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3 5 -1</minPt>
+    <maxPt>3.5 5.5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3.5 5.5 -1</minPt>
+    <maxPt>-3 6 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2.5 5.5 -1</minPt>
+    <maxPt>-2 6 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1.5 5.5 -1</minPt>
+    <maxPt>-1 6 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-0.5 5.5 -1</minPt>
+    <maxPt>0 6 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0.5 5.5 -1</minPt>
+    <maxPt>1 6 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1.5 5.5 -1</minPt>
+    <maxPt>2 6 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2.5 5.5 -1</minPt>
+    <maxPt>3 6 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3.5 5.5 -1</minPt>
+    <maxPt>4 6 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3 6 -1</minPt>
+    <maxPt>-2.5 6.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2 6 -1</minPt>
+    <maxPt>-1.5 6.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1 6 -1</minPt>
+    <maxPt>-0.5 6.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0 6 -1</minPt>
+    <maxPt>0.5 6.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1 6 -1</minPt>
+    <maxPt>1.5 6.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2 6 -1</minPt>
+    <maxPt>2.5 6.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3 6 -1</minPt>
+    <maxPt>3.5 6.5 -1</maxPt>
+  </surface>
+  
+    <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3.5 6.5 -1</minPt>
+    <maxPt>-3 7 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2.5 6.5 -1</minPt>
+    <maxPt>-2 7 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1.5 6.5 -1</minPt>
+    <maxPt>-1 7 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-0.5 6.5 -1</minPt>
+    <maxPt>0 7 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0.5 6.5 -1</minPt>
+    <maxPt>1 7 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1.5 6.5 -1</minPt>
+    <maxPt>2 7 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2.5 6.5 -1</minPt>
+    <maxPt>3 7 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3.5 6.5 -1</minPt>
+    <maxPt>4 7 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3 7 -1</minPt>
+    <maxPt>-2.5 7.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2 7 -1</minPt>
+    <maxPt>-1.5 7.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1 7 -1</minPt>
+    <maxPt>-0.5 7.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0 7 -1</minPt>
+    <maxPt>0.5 7.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1 7 -1</minPt>
+    <maxPt>1.5 7.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2 7 -1</minPt>
+    <maxPt>2.5 7.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3 7 -1</minPt>
+    <maxPt>3.5 7.5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3.5 7.5 -1</minPt>
+    <maxPt>-3 8 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2.5 7.5 -1</minPt>
+    <maxPt>-2 8 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1.5 7.5 -1</minPt>
+    <maxPt>-1 8 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-0.5 7.5 -1</minPt>
+    <maxPt>0 8 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0.5 7.5 -1</minPt>
+    <maxPt>1 8 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1.5 7.5 -1</minPt>
+    <maxPt>2 8 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2.5 7.5 -1</minPt>
+    <maxPt>3 8 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3.5 7.5 -1</minPt>
+    <maxPt>4 8 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3 8 -1</minPt>
+    <maxPt>-2.5 8.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2 8 -1</minPt>
+    <maxPt>-1.5 8.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1 8 -1</minPt>
+    <maxPt>-0.5 8.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0 8 -1</minPt>
+    <maxPt>0.5 8.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1 8 -1</minPt>
+    <maxPt>1.5 8.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2 8 -1</minPt>
+    <maxPt>2.5 8.5 -1</maxPt>
+  </surface>
+
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3 8 -1</minPt>
+    <maxPt>3.5 8.5 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-3.5 8.5 -1</minPt>
+    <maxPt>-3 9 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-2.5 8.5 -1</minPt>
+    <maxPt>-2 9 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-1.5 8.5 -1</minPt>
+    <maxPt>-1 9 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>-0.5 8.5 -1</minPt>
+    <maxPt>0 9 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>0.5 8.5 -1</minPt>
+    <maxPt>1 9 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>1.5 8.5 -1</minPt>
+    <maxPt>2 9 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>2.5 8.5 -1</minPt>
+    <maxPt>3 9 -1</maxPt>
+  </surface>
+  
+  <surface type="Box">
+  	<shader ref="white" />
+    <minPt>3.5 8.5 -1</minPt>
+    <maxPt>4 9 -1</maxPt>
   </surface>
   
   <light>
