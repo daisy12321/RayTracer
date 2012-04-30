@@ -734,6 +734,10 @@
   	<shader ref="yellow" />
 	<data>bunnySmallR180Tran.msh</data>
   </surface>
+    <surface type="Mesh">
+  	<shader ref="red" />
+	<data>bunnySmallR180TranFar.msh</data>
+  </surface>
   <light>
   	<position>3 10 5</position>
   	<intensity>.5 .5 .5</intensity>
