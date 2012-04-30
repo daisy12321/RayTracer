@@ -112,7 +112,7 @@ public class RayTracer {
 						double y = (iy + (dy + 0.5)/scene.getSamples())/height;
 						cam.getRay(ray, x, y);
 						
-						shadeRay(rayColor, scene, ray, lights, 1, 1, false); 
+						shadeRay(rayColor, scene, ray, lights, 0, 1, false); 
 						sum.add(rayColor);
 					}
 				}

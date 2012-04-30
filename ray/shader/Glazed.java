@@ -55,17 +55,24 @@ public class Glazed extends Shader {
     	Ray refRay = new Ray(record.location, r);
     	refRay.start = Ray.EPSILON;
     	refRay.end = Double.POSITIVE_INFINITY;
-		
+
 		Color outColor1 = new Color();
 		Color outColor2 = new Color();
 		
+		if (record.normal.dot(toEye) < 0) return;
 		double cosTheta1 = Math.abs(record.normal.dot(toEye));
+		/* 
 		double cosTheta2 = Math.sqrt(1 - (1 - cosTheta1 * cosTheta1) / (refractiveIndex * refractiveIndex));
 
 		double Fp = (refractiveIndex * cosTheta1 - cosTheta2) / (refractiveIndex * cosTheta1 + cosTheta2);
 		double Fs = (cosTheta1 - refractiveIndex * cosTheta2) / (cosTheta1 + refractiveIndex * cosTheta2);
 		double R = 0.5 * (Math.pow(Fp, 2) + Math.pow(Fs, 2));
-		
+		*/
+    	
+    	double Fp = (refractiveIndex - 1) / (refractiveIndex + 1);
+    	//double Fs = (1 - refractiveIndex) / (refractiveIndex - 1);
+    	double R0 = Math.pow(Fp, 2);
+    	double R = R0 + (1-R0) * Math.pow((1-cosTheta1),5);
 		RayTracer.shadeRay(outColor1, scene, refRay, lights, depth + 1, R, false);
 		
 		substrate.shade(outColor2, scene, lights, toEye, record, 1, 1, false);
