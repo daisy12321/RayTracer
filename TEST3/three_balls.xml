@@ -15,21 +15,21 @@
   </image>
   
   <shader name="blueglazed" type="Glazed">
-    <refractiveIndex>1.5</refractiveIndex>
+    <refractiveIndex>3</refractiveIndex>
      <substrate type="Lambertian">
        <diffuseColor>.05 .2 1</diffuseColor>
     </substrate>
   </shader>
   
   <shader name="redglazed" type="Glazed">
-    <refractiveIndex>1.5</refractiveIndex>
+    <refractiveIndex>3</refractiveIndex>
      <substrate type="Lambertian">
        <diffuseColor>1 .05 .2</diffuseColor>
     </substrate>
   </shader>
   
   <shader name="greenglazed" type="Glazed">
-    <refractiveIndex>1.5</refractiveIndex>
+    <refractiveIndex>3</refractiveIndex>
      <substrate type="Lambertian">
        <diffuseColor>.3 1 .2</diffuseColor>
     </substrate>
@@ -439,7 +439,7 @@
     <intensity>1 1 1</intensity>
   </light>
   
-    <light>
+  <light>
     <position>1 3 0</position>
     <intensity>1 1 1</intensity>
   </light>
@@ -447,5 +447,30 @@
   <light>
     <position>-4 3 5</position>
     <intensity>.7 .7 .7</intensity>
+  </light>
+  
+  <light>
+    <position>4 3 5</position>
+    <intensity>.7 .7 .7</intensity>
+  </light>
+  
+  <light>
+    <position>-4 -10 5</position>
+    <intensity>.1 .1 .1</intensity>
+  </light>
+  
+  <light>
+    <position>4 -10 5</position>
+    <intensity>.1 .1 .1</intensity>
+  </light>
+  
+  <light>
+    <position>-2 -10 5</position>
+    <intensity>.1 .1 .1</intensity>
+  </light>
+  
+  <light>
+    <position>2 -10 5</position>
+    <intensity>.1 .1 .1</intensity>
   </light>
 </scene>
