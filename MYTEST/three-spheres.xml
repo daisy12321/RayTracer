@@ -2,9 +2,9 @@
 
 <scene>
   <camera>
-    <viewPoint>-2.5 -10 7</viewPoint>
-    <viewDir>2.6 10.3 -7</viewDir>
-    <projNormal>-2.6 -10.3 7</projNormal>
+    <viewPoint>-2.25 -10 5</viewPoint>
+    <viewDir>2.6 10.3 -5</viewDir>
+    <projNormal>-2.6 -10.3 5</projNormal>
     <viewUp>0 0 1</viewUp>
     <projDistance>11</projDistance>
     <viewWidth>3.5</viewWidth>
@@ -128,12 +128,6 @@
  
  <surface type="Box">
  	<shader ref="black" />
-   <minPt>3.5 -1.5 -1</minPt>
-   <maxPt>4 -1 -1</maxPt>
- </surface>
- 
- <surface type="Box">
- 	<shader ref="black" />
    <minPt>4 -1.5 -1</minPt>
    <maxPt>4.5 -1 -1</maxPt>
  </surface>
@@ -202,7 +196,7 @@
  <surface type="Box">
  	<shader ref="black" />
    <minPt>-1 -0.5 -1</minPt>
-   <maxPt>-1.5 0 -1</maxPt>
+   <maxPt>-0.5 0 -1</maxPt>
  </surface>
  
  <surface type="Box">
